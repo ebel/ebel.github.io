@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Zola
+        with:
+          submodules: recursive  # Ensures all submodules are checked out      - name: Install Zola
         run: |
           curl -L https://github.com/getzola/zola/releases/download/v0.15.0/zola-v0.15.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
           mv zola /usr/local/bin/zola
