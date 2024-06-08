@@ -10,17 +10,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
-          submodules: recursive  # Ensures all submodules are checked out      - name: Install Zola
+          submodules: recursive  # Ensures all submodules are checked out
+
+      - name: Install Zola
         run: |
           curl -L https://github.com/getzola/zola/releases/download/v0.15.0/zola-v0.15.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
           mv zola /usr/local/bin/zola
+
       - name: Build the site
         run: zola build
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
