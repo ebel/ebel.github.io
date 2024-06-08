@@ -18,11 +18,6 @@ jobs:
       - name: List files in repository root
         run: ls -la
 
-      - name: List files in templates directory
-        run: ls -la themes/templates
-
-      - name: List files in themes directory
-        run: ls -la themes/terminimal
 
       - uses: taiki-e/install-action@v2
         with:
@@ -30,6 +25,12 @@ jobs:
 
       - name: List files in public directory
         run: ls -la public
+
+      - name: List files in templates directory
+        run: ls -la themes/templates
+
+      - name: List files in themes directory
+        run: ls -la themes/terminimal
 
       - name: Deploy to GitHub Pages
         uses: shalzz/zola-deploy-action@v0.17.2
