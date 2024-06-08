@@ -3,7 +3,7 @@
 base_url = "https://ebel.github.io/ebel.github.io/"
 
 theme = "terminimal"
-
+title = "My Zola Site"
 # Sass compilation is required
 compile_sass = true
 
