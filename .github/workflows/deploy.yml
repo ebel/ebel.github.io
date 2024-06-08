@@ -38,6 +38,7 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
           # Target branch
-          PAGES_BRANCH: main
+          PAGES_BRANCH: gh-pages
+          BUILD_DIR: themes/terminimal/templates
           # Provide personal access token
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
