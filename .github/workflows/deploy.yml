@@ -15,8 +15,11 @@ jobs:
         with:
           submodules: recursive  # Ensures all submodules are checked out
 
-      - name: List files in repository
+      - name: List files in repository root
         run: ls -la
+
+      - name: List files in templates directory
+        run: ls -la templates
 
       - name: List files in themes directory
         run: ls -la themes/terminimal
