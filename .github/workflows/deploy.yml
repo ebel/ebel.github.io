@@ -1,19 +1,41 @@
-# On every push this script is executed
-on: push
 name: Build and deploy GH Pages
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: build_and_deploy
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Ensures all submodules are checked out
+
+      - name: List files in repository
+        run: ls -la
+
+      - name: List files in themes directory
+        run: ls -la themes/terminimal
+
+      - name: Install Zola
+        run: |
+          curl -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          mv zola /usr/local/bin/zola
+
+      - name: Build the site
+        run: zola build
+
+      - name: List files in public directory
+        run: ls -la public
+
+      - name: Deploy to GitHub Pages
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
           # Target branch
           PAGES_BRANCH: gh-pages
           # Provide personal access token
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Or if publishing to the same repo, use the automatic token
-          #TOKEN: ${{ secrets.GITHUB_TOKEN }}
