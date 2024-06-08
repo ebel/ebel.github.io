@@ -2,7 +2,9 @@
 #base_url = "https://tylerebel.com"
 base_url = "https://ebel.github.io/ebel.github.io/"
 
-# Whether to automatically compile all Sass files in the sass directory
+theme = "terminimal"
+
+# Sass compilation is required
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
