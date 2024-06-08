@@ -31,6 +31,9 @@ jobs:
       - name: List files in templates directory
         run: ls -la themes/terminimal/templates
 
+      - name: Build the site
+        run: zola build
+
       - name: Deploy to GitHub Pages
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
