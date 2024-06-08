@@ -42,4 +42,4 @@ jobs:
           BUILD_DIR: themes/terminimal/templates
           # Provide personal access token
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OUT_DIR: public
+          OUT_DIR: ../../../public
