@@ -27,7 +27,7 @@ jobs:
         run: ls -la public
 
       - name: List files in templates directory
-        run: ls -la themes/templates
+        run: ls -la themes/terminimal/templates
 
       - name: List files in themes directory
         run: ls -la themes/terminimal
