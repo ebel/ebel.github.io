@@ -18,28 +18,35 @@ jobs:
       - name: List files in repository root
         run: ls -la
 
-      - uses: taiki-e/install-action@v2
-        with:
-          tool: zola@0.17.1
-
-      - name: List files in public directory
-        run: ls -la public
-
       - name: List files in themes directory
         run: ls -la themes/terminimal
 
       - name: List files in templates directory
         run: ls -la themes/terminimal/templates
 
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.17.2
+
       - name: Build the site
         run: zola build
+
+      - name: Verify the existence of the public directory
+        run: |
+          echo "Checking if 'public' directory exists..."
+          if [ -d "public" ]; then
+            echo "'public' directory exists."
+          else
+            echo "'public' directory does not exist."
+            exit 1
+          fi
+
+      - name: List files in public directory
+        run: ls -la public
 
       - name: Deploy to GitHub Pages
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
-          # Target branch
-          PAGES_BRANCH: main
-          BUILD_DIR: themes/terminimal/templates
-          # Provide personal access token
+          PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
