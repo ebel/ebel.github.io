@@ -26,6 +26,15 @@ jobs:
       - name: Debug - List files in current directory
         run: ls -la
 
+      - name: Debug - Check if config.toml exists
+        run: |
+          if [ -f "config.toml" ]; then
+            echo "config.toml exists."
+          else
+            echo "config.toml does not exist."
+            exit 1
+          fi
+
       - name: Build the site
         run: |
           echo "Building site..."
@@ -43,9 +52,3 @@ jobs:
 
       - name: List files in the public directory
         run: ls -la public
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
