@@ -56,7 +56,7 @@ jobs:
 
       - name: Verify the existence of the public directory
         run: |
-          cd $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/tylerebel
           echo "Checking if 'public' directory exists..."
           if [ -d "public" ]; then
             echo "'public' directory exists."
