@@ -22,6 +22,7 @@ jobs:
 
       - name: Build the site
         run: zola build
+        working-directory: .  # Ensure this command runs in the root directory
 
       - name: Verify the existence of the public directory
         run: |
@@ -32,12 +33,15 @@ jobs:
             echo "'public' directory does not exist."
             exit 1
           fi
+        working-directory: .
 
       - name: List files in the public directory
         run: ls -la public
+        working-directory: .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+        working-directory: .
