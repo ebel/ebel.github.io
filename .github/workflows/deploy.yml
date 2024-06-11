@@ -50,7 +50,7 @@ jobs:
 
       - name: Build the site
         run: |
-          cd $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/tylerebel
           echo "Building site..."
           zola build
 
