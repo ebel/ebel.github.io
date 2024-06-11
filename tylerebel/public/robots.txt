@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://tylerebel.com/sitemap.xml
+Sitemap: https://ebel.github.io/ebel.github.io/sitemap.xml
