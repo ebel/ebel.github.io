@@ -1,3 +1,6 @@
 [submodule "themes/terminimal"]
 	path = themes/terminimal
 	url = https://github.com/pawroman/zola-theme-terminimal
+[submodule "tylerebel/themes/terminimal"]
+	path = tylerebel/themes/terminimal
+	url = https://github.com/pawroman/zola-theme-terminimal
