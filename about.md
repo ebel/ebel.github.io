@@ -5,5 +5,6 @@ permalink: /about/
 ---
 
 * Projects
+* Resume
 * Links
 * Random
