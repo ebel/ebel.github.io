@@ -1,3 +1,12 @@
 theme: minima
 title: Tyler Ebel
 description: memory dump
+
+author:
+  name: ebel
+  email: tebel@tylerebel.com
+
+site:
+  github_username: ebel
+  twitter_username: tylerebel9
+  linkedin_username: tylerebel
