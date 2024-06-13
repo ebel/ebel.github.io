@@ -1,6 +1,8 @@
 theme: minima
 title: Tyler Ebel
 description: memory dump
+page:
+  list_title: Greetings.
 
 author:
   name: ebel
