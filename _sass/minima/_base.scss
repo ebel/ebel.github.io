@@ -115,14 +115,14 @@ a {
     text-decoration: underline;
   }
 
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
-}
+//   .social-media-list &:hover {
+//     text-decoration: none;
+//
+//     .username {
+//       text-decoration: underline;
+//     }
+//   }
+// }
 
 
 /**
@@ -218,11 +218,23 @@ pre {
 }
 
 .social-media-list {
-  li + li {
-    padding-top: 5px;
+  display: flex;          /* Display list items in a row */
+  justify-content: center; /* Center align the icons horizontally */
+  list-style: none;       /* Remove default list style */
+  padding: 0;             /* Remove default padding */
+
+  li {
+    margin: 0 10px;       /* Adjust spacing between icons */
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
   }
 }
-
 
 
 /**
