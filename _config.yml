@@ -6,7 +6,8 @@ author:
   name: ebel
   email: tebel@tylerebel.com
 
-site:
-  github_username: ebel
-  twitter_username: tylerebel9
-  linkedin_username: tylerebel
+social_links:
+  twitter: https://twitter.com/tylerebel9
+  github: https://github.com/ebe;
+  linkedin: https://www.linkedin.com/in/tylerebel
+
