@@ -1,1 +1,4 @@
-# Links
+---
+layout: page
+title: Links
+---

@@ -1,2 +1,4 @@
-
-# Random
+---
+layout: page
+title: Random
+---

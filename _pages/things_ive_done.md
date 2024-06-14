@@ -1,2 +1,4 @@
-
-# Things I've Done
+---
+layout: page
+title: Things I've Done
+---
