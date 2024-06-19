@@ -13,4 +13,8 @@ title: Links
    * [Rust exercises](https://rust-exercises.com/)
    * [Self study cs degree](https://github.com/ossu/computer-science)
    * [Hubris OS](https://hubris.oxide.computer/reference/)
- * Ham
+   * [Linux from Scratch](https://www.linuxfromscratch.org/)
+   * AWS
+     * [WAFR](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+     * [Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
+ * Ham Radio
