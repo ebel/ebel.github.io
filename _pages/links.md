@@ -18,3 +18,5 @@ title: Links
      * [WAFR](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
      * [Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
  * Ham Radio
+   * [Aurora Forecast](https://www.swpc.noaa.gov/products/aurora-30-minute-forecast)
+   * [Space Weather Forecasts](https://www.swpc.noaa.gov/forecasts)
