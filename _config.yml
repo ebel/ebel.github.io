@@ -13,3 +13,6 @@ baseurl: ""
 collections:
   pages:
     output: true
+
+plugins:
+  - jemoji
