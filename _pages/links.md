@@ -6,6 +6,7 @@ title: Links
  * Blogs
    * [Brendan Gregg](https://www.brendangregg.com)
    * [Unsupervised Learning](https://danielmiessler.com/)
+   * [Oxide Computer](https://oxide.computer/blog)
  * Articles
  * Reference
    * [Rust-lang book](https://doc.rust-lang.org/book/)
@@ -14,6 +15,8 @@ title: Links
    * [Self study cs degree](https://github.com/ossu/computer-science)
    * [Hubris OS](https://hubris.oxide.computer/reference/)
    * [Linux from Scratch](https://www.linuxfromscratch.org/)
+   * [EKS Best Practices](https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html)
+   * [Kubernets Concepts](https://kubernetes.io/docs/concepts/)
    * AWS
      * [WAFR](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
      * [Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
